@@ -10,16 +10,16 @@ const StyledHeader = styled.header`
     justify-content: space-between;
     padding: 0;
     box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.25);
-    width: 100%;
     z-index: 1;
 `
 
 const LogoImg = styled.img`
-    height: 80px;
-    width: 80px;
-    margin: 1em;
-    margin-bottom: .5em;
-    margin-top: .5em;
+    /* height: 70px; */
+    /* width: 50px; */
+    margin: .5em;
+    /* margin-left: 0; */
+    /* margin-bottom: 0; */
+    /* margin-top: 0; */
 `
 
 const HeaderName = styled.h3`

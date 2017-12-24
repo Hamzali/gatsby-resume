@@ -11,19 +11,20 @@ const Body = styledComponents.div`
 
 const Header = styledComponents.h3`
     background: black;
-    padding: .5em;
+    padding: .3em;
+    padding-left: 0;
     color: white;
     margin: 0;
 `
 
 const Content = styledComponents.p`
     margin: 0;
-    padding: 1em 0 0 1em;
+    padding: .5em 0 0 1em;
 `
 
 const DateData = styledComponents.p`
     margin: 0;
-    padding: 0 0 1em 1em;
+    padding: 0 0 .5em 1em;
 `
 
 export const ResumeBlock = ({header, content, date}) => (

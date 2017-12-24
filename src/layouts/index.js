@@ -9,15 +9,24 @@ import './index.css'
 import Header from '../components/header'
 
 
-const Layout = styledComponents.div`
-  margin: 0 auto;
+const Content = styledComponents.div`
+  margin: 0;
   max-widht: 960;
-  padding: 0px 1.0875rem 1.45rem;
   padding-top: 0;
 `
 
+const Container = styledComponents.div`
+  display: grid;
+  grid-template-rows: 15vh auto 100px;
+`
+
+const Footer = styledComponents.footer`
+  background: black;
+`
+
+
 const TemplateWrapper = ({children}) => (
-  <div>
+  <Container>
     <Helmet
       title="Gatsby Default Starter"
       meta={[
@@ -30,10 +39,13 @@ const TemplateWrapper = ({children}) => (
       }
     ]}/>
     <Header/>
-    <Layout>
+    <Content>
       {children()}
-    </Layout>
-  </div>
+    </Content>
+    <Footer>
+
+    </Footer>
+  </Container>
 )
 
 TemplateWrapper.propTypes = {
